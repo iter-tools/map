@@ -1,0 +1,62 @@
+{
+  "name": "@iter-tools/map",
+  "version": "1.0.0",
+  "description": "An es6-style iterable Map",
+  "main": "lib/map.cjs",
+  "module": "lib/map.mjs",
+  "types": "lib/map.d.ts",
+  "exports": {
+    "import": "./lib/map.mjs",
+    "require": "./lib/map.cjs"
+  },
+  "files": [
+    "lib/*"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "test": "jest",
+    "verify": "npm run lint && jest --coverage && codecov",
+    "format": "prettier --write '**/*.{js,md}'",
+    "lint": "eslint ."
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint"
+    ],
+    "*.md": [
+      "prettier -c"
+    ]
+  },
+  "keywords": [
+    "iterator",
+    "iterable",
+    "collection",
+    "Map",
+    "isMap",
+    "extend"
+  ],
+  "repository": "git@github.com:iter-tools/map.git",
+  "author": "Conrad Buck <conartist6@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "codecov": "^3.6.1",
+    "eslint": "^7.5.0",
+    "eslint-config-prettier": "^6.3.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jest": "^23.20.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-promise": "^4.1.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "husky": "^4.2.5",
+    "jest": "^26.2.2",
+    "lint-staged": "^10.2.11",
+    "prettier": "^2.0.5"
+  }
+}
