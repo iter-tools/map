@@ -1,6 +1,6 @@
 {
   "name": "@iter-tools/map",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "An es6-style iterable Map",
   "main": "lib/map.cjs",
   "module": "lib/map.mjs",
