@@ -1,3 +1,5 @@
+/// <reference lib="es6" />
+
 declare class Map<K, V> {
   /**
    * Returns true if `inst` is a `Map`.
@@ -21,7 +23,7 @@ declare class Map<K, V> {
 
   delete(key: K): void;
 
-  forEach(cb: (value: T, key: K, map: Map) => any);
+  forEach(cb: (value: V, key: K, map: Map<K, V>) => any): void;
 
   keys(): IterableIterator<K>;
 
@@ -32,4 +34,4 @@ declare class Map<K, V> {
   [Symbol.iterator](): IterableIterator<[K, V]>;
 }
 
-export = Map;
+export default Map;

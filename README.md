@@ -5,7 +5,7 @@
 
 A simple `Map` which is almost identical to the es6 `Map` builtin. In fact it is a transparent facade over an internal `Map` builtin instance. To understand why this is useful see [rationale](#rationale).
 
-Package includes Typescript libdefs. Suitable for node or browser environments. Supports native es imports in `node > 13.2`. Supports native es imports in `node > 13.2`.
+Package includes Typescript libdefs. Suitable for node or browser environments. Supports native es imports in `node > 13.2`.
 
 ## Usage
 
@@ -13,6 +13,8 @@ Package includes Typescript libdefs. Suitable for node or browser environments. 
 const Map = require('@iter-tools/map'); // OR
 import Map from '@iter-tools/map';
 ```
+
+Until Typescript supports [package exports](https://github.com/microsoft/TypeScript/issues/33079) you must enable `esModuleInterop` to use this module.
 
 ## Rationale
 
