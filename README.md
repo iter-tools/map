@@ -14,6 +14,8 @@ const Map = require('@iter-tools/map'); // OR
 import Map from '@iter-tools/map';
 ```
 
+Until Typescript supports [package exports](https://github.com/microsoft/TypeScript/issues/33079) you must enable `esModuleInterop` to use this module.
+
 ## Rationale
 
 `@iter-tools/map` adds two key pieces of functionality to the `Map` builtin:
