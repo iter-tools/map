@@ -9,7 +9,8 @@ declare class Map<K, V> {
    */
   static isMap(inst: any): boolean;
 
-  constructor(entries?: Iterable<[K, V]> | null);
+  constructor(entries?: readonly (readonly [K, V])[] | null);
+  constructor(entries: Iterable<readonly [K, V]>);
 
   readonly size: number;
 
